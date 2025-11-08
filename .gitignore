@@ -11,3 +11,4 @@ mlruns/
 data/
 uv.lock
 *ipynb_checkpoints/
+*.tar.gz
