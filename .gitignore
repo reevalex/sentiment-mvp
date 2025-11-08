@@ -8,4 +8,3 @@ wheels/
 .vscode
 .DS_Store
 mlruns/
-data/
