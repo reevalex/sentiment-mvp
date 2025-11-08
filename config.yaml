@@ -1,0 +1,19 @@
+project_root: "."
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/proceseed"
+  raw_train: "imdb_train.csv"
+  raw_test: "imdb_test.csv"
+
+models:
+  dir: "models"
+  vectorizer: "vectorizer.pkl"
+
+pipeline:
+  max_features: 5000
+  test_size: 0.2
+  random_state: 123
+
+debug:
+  sample_size: 1000

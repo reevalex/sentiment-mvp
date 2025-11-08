@@ -43,14 +43,11 @@ class SentimentPipeline:
     return (X_train, X_test, y_train, y_test, df_clean)
   
 if __name__ == "__main__":
-  import sys
-  sys.path.append("..")
-  
   df_train = pd.read_csv("data/raw/imdb_train.csv")
   pipe = SentimentPipeline(max_features=5000)
   X_train, X_test, y_train, y_test, df_clean = pipe.run_full(df_train)
   
-  joblib.dump(pipe.vectorizer, "models/vectorizer.pkl")
+  joblib.dump(pipe.vectorizer, "data/models/vectorizer.pkl")
   X_train.to_csv("data/proceseed/train_features.csv", index=False)
   X_test.to_csv("data/proceseed/test_features.csv", index=False)
   y_train.to_csv("data/proceseed/train_labels.csv", index=False)

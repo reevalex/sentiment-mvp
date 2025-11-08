@@ -14,7 +14,7 @@ nltk.download("punkt_tab", quiet=True)
 stop_words =set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
 
-def clean_text(text, remove_stopwords=True):
+def clean_text(text, remove_stopwords =True):
   if pd.isna(text) or not isinstance(text, str):
     return ""
   

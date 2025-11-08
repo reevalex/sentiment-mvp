@@ -8,3 +8,6 @@ wheels/
 .vscode
 .DS_Store
 mlruns/
+data/
+uv.lock
+*ipynb_checkpoints/
