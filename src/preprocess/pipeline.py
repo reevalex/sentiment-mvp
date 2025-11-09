@@ -39,6 +39,7 @@ class SentimentPipeline:
     
     print(f"Processed: {len(X_train)} train, {len(X_test)} test samples")
     print(f"Features: {X_train.shape[1]}")
+    print(f"Labels: {y_train.shape}")
     
     return (X_train, X_test, y_train, y_test, df_clean)
   
